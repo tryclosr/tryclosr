@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Closr</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0a0a;
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  /* Logo */
+  .logo { display: flex; align-items: baseline; }
+  .logo-main { font-family: "Playfair Display", serif; font-weight: 900; font-size: 52px; color: #fff; letter-spacing: -2px; }
+  .logo-r { font-family: "Playfair Display", serif; font-weight: 900; font-size: 52px; color: #fff; letter-spacing: -2px; position: relative; display: inline-block; }
+  .logo-r::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 100%; height: 4px; background: #c0401a; border-radius: 2px; }
+
+  .tagline { font-size: 14px; color: #555; letter-spacing: 2px; text-transform: uppercase; text-align: center; }
+
+  /* Divider */
+  .divider { width: 40px; height: 1px; background: #222; }
+
+  /* Buttons */
+  .links { display: flex; flex-direction: column; gap: 14px; width: 100%; }
+
+  .link-btn {
+    display: flex; align-items: center; gap: 16px;
+    width: 100%; padding: 20px 24px;
+    border-radius: 16px; text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 1px solid #1e1e1e;
+  }
+  .link-btn:hover { transform: translateY(-2px); }
+  .link-btn:active { transform: scale(0.99); }
+
+  .btn-primary {
+    background: #c0401a;
+    border-color: #c0401a;
+    box-shadow: 0 8px 30px rgba(192,64,26,0.25);
+  }
+  .btn-primary:hover { box-shadow: 0 12px 40px rgba(192,64,26,0.35); }
+
+  .btn-secondary {
+    background: #111;
+    border-color: #2a2a2a;
+  }
+  .btn-secondary:hover { border-color: #3a3a3a; box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
+
+  .btn-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0;
+  }
+  .btn-primary .btn-icon { background: rgba(255,255,255,0.15); }
+  .btn-secondary .btn-icon { background: rgba(192,64,26,0.1); }
+
+  .btn-text { flex: 1; }
+  .btn-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+  .btn-primary .btn-title { color: #fff; }
+  .btn-desc { font-size: 12px; }
+  .btn-primary .btn-desc { color: rgba(255,255,255,0.65); }
+  .btn-secondary .btn-desc { color: #555; }
+
+  .btn-arrow { font-size: 18px; color: rgba(255,255,255,0.4); }
+
+  /* Social icons */
+  .socials { display: flex; gap: 14px; align-items: center; }
+  .social-link {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: #161616; border: 1px solid #222;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .social-link:hover { background: #1e1e1e; }
+
+  .footer-text { font-size: 10px; color: #2a2a2a; letter-spacing: 1.5px; text-transform: uppercase; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- Logo -->
+  <div class="logo"><span class="logo-main">Clos</span><span class="logo-r">r</span></div>
+  <div class="tagline">Your Industry. Your Mentors. Your Breakthrough.</div>
+
+  <div class="divider"></div>
+
+  <!-- Links -->
+  <div class="links">
+
+    <a href="https://tryclosr.github.io/closr-student-waitlist" class="link-btn btn-primary">
+      <div class="btn-icon">🎯</div>
+      <div class="btn-text">
+        <div class="btn-title">Find Your Mentor</div>
+        <div class="btn-desc">Get early access as a learner</div>
+      </div>
+      <div class="btn-arrow">→</div>
+    </a>
+
+    <a href="https://tryclosr.github.io/closr-mentor-waitlist" class="link-btn btn-secondary">
+      <div class="btn-icon">🏆</div>
+      <div class="btn-text">
+        <div class="btn-title">Become a Mentor</div>
+        <div class="btn-desc">Apply for the Founding Mentor Program</div>
+      </div>
+      <div class="btn-arrow">→</div>
+    </a>
+
+  </div>
+
+  <!-- Socials -->
+  <div class="socials">
+    <a href="#" class="social-link">📸</a>
+    <a href="#" class="social-link">💼</a>
+    <a href="#" class="social-link">𝕏</a>
+  </div>
+
+  <div class="footer-text">© 2025 Closr · closr.app</div>
+
+</div>
+
+</body>
+</html>
